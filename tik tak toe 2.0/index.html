@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="neon-title"> Tic Tac Toe</h1>
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="status neon-text">X's turn</div>
+        <div class="score-board neon-text">X Wins: 0 | O Wins: 0 | Draws: 0</div>
+        <div class="controls">
+            <button class="restart neon-button">Restart Game</button>
+        </div>
+        <div class="settings">
+            <h2 class="neon-text">Customize Game</h2>
+            <div>
+                <label for="x-piece" class="neon-text">X Piece:</label>
+                <input type="text" id="x-piece" value="X" maxlength="1">
+            </div>
+            <div>
+                <label for="o-piece" class="neon-text">O Piece:</label>
+                <input type="text" id="o-piece" value="O" maxlength="1">
+            </div>
+            <div>
+                <label for="board-color" class="neon-text">Board Color:</label>
+                <input type="color" id="board-color" value="#ddd">
+            </div>
+            <button class="apply-settings neon-button">Apply Settings</button>
+        </div>
+        <div class="popup">
+            <div class="popup-content neon-popup">
+                <div class="popup-message neon-text">Game Over</div>
+                <button class="restart-game neon-button">Restart Game</button>
+            </div>
+        </div>
+        <div class="footer neon-text">Powered by Subhankar Ghosh</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
